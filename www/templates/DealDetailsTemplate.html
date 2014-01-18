@@ -1,0 +1,36 @@
+<div style="position: relative;">
+	<img class="dealImage" src='<%= bigImageUrls[0]%>' style="width: 100%" />
+</div>
+<div class="details-content">	
+	<ul data-role="listview" class="locations">
+		<li data-role="list-divider" data-theme="c">
+			<strong>Info</strong>
+			<span class="ui-li-count">
+
+			</span>
+		</li>		
+		<li>
+			<strong><%= brand.name %></strong><div style="padding-left:91%;margin-top:-18px;" data-use="rating"></div>
+		</li>			
+		<li data-role="list-divider" data-theme="c">
+			<strong>Details</strong>
+		</li>		
+	    <li>
+	        <strong><%= description %></strong>
+	    </li>
+		<li data-role="list-divider" data-theme="c">
+			<strong>Category </strong>
+		</li>
+		<input name="category_type" id="categorytype" class="tagsinput"/>
+		<li data-role="list-divider" data-theme="c">
+			<strong>Locations</strong>
+		</li>
+		<li class="map">
+			<div id="map-canvas">
+		<!-- map loads here... -->
+			</div>
+		</li>
+	</ul>	
+</div>
+
+
